@@ -162,7 +162,7 @@ class LineSegmentsFeature():
            l = lkey
            lineSegments = uniqueLines[lkey]
            sl = SpecialLineSegments()
-           sl._line = l;
+           sl._line = l
            sl._lineSegments = lineSegments
            sl._cornerPoints = []
            segLines.append(sl)
