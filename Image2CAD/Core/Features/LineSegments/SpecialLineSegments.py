@@ -294,7 +294,7 @@ class SpecialLineSegments:
                     onlinePointsPercentage = self.FindPercentageOfPointsOnLine(pointsOnLineBtnCorners)
                     if onlinePointsPercentage > 90:
                         newlineSegm = Line2(c1,c)
-                        if int(newlineSegm.Length()) > 8:                       
+                        if int(newlineSegm.Length()) > 8: # length (pixel)                   
                             arrowHead = SpecialLineSegments.ReturnArrowHeads(c1)
                             if arrowHead is None:
                                 continue
