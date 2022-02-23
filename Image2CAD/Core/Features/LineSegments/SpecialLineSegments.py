@@ -236,6 +236,7 @@ class SpecialLineSegments:
 
         X_Coordinate_Array = line_pixel_array[ : , 0]
         Y_Coordinate_Array = line_pixel_array[ : , 1]
+        # filter out the pixel according to their coordinates
         line_pixel_array = line_pixel_array[(X_Coordinate_Array >= 0) & (Y_Coordinate_Array >= 0) & (X_Coordinate_Array < width) & (Y_Coordinate_Array < height)]
 
         line_pixel_array[:,2] = img[line_pixel_array[:,1].astype(np.uint),line_pixel_array[:,0].astype(np.uint)]
