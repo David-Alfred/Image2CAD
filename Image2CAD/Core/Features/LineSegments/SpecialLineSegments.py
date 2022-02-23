@@ -204,6 +204,7 @@ class SpecialLineSegments:
         
         negative_Y = p1y > p2y
         negative_X = p1x > p2x
+        # range coordinates for little to large
         if p1y == p2y: 
             line_pixel_array[ : , 1 ] = p1y
             if negative_X:
