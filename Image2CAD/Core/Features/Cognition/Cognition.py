@@ -78,6 +78,7 @@ class Cognition():
         return True
 
     @staticmethod
+    # 重合检测
     def CheckIfIntersectingLineSegment(p1, p2, p3, p4):
         tolerance = Constants.PRECISION
         Pixeltolerance = 0.5 
