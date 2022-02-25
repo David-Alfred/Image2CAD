@@ -94,7 +94,7 @@ class Cognition():
         numeratorB = ((x2 - x1) * (y1 - y3)) - ((y2 - y1) * (x1 - x3))
         denominator = ((y4 - y3) * (x2 - x1)) - ((x4 - x3) * (y2 - y1))
 
-        if (MathUtils.EQTF(denominator, 0.0, tolerance)):
+        if (MathUtils.EQTF(denominator, 0.0, tolerance)): # check whether two lines are parallel
             if(MathUtils.EQTF(numeratorB, 0.0, tolerance) and MathUtils.EQTF(numeratorA, 0.0, tolerance)):
                 return Cognition.CheckForCoincidentLineSegments(p1, p2, p3, p4)
             return False                 
