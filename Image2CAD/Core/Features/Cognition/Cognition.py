@@ -90,9 +90,9 @@ class Cognition():
         y2 = p2.y
         y3 = p3.y
         y4 = p4.y
-        numeratorA = ((x4 - x3) * (y1 - y3)) - ((y4 - y3) * (x1 - x3))
-        numeratorB = ((x2 - x1) * (y1 - y3)) - ((y2 - y1) * (x1 - x3))
-        denominator = ((y4 - y3) * (x2 - x1)) - ((x4 - x3) * (y2 - y1))
+        numeratorA = ((x4 - x3) * (y1 - y3)) - ((y4 - y3) * (x1 - x3)) # Vector(P3P4) \times Vector(P3P1)
+        numeratorB = ((x2 - x1) * (y1 - y3)) - ((y2 - y1) * (x1 - x3)) # Vector(P1P2) \times Vector(P3P1)
+        denominator = ((y4 - y3) * (x2 - x1)) - ((x4 - x3) * (y2 - y1)) # vector (P3P4) \times Vector(P1P2)
 
         if (MathUtils.EQTF(denominator, 0.0, tolerance)): # check whether two lines are parallel
             if(MathUtils.EQTF(numeratorB, 0.0, tolerance) and MathUtils.EQTF(numeratorA, 0.0, tolerance)): # check whether both segments on the same line:
