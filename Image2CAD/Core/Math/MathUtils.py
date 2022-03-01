@@ -107,6 +107,7 @@ class MathUtils:
 
     @staticmethod
     def ProjectToLine2( p1, p2, p):
+        # project point p to the line with end points p1 and p2
         v1 = (p2 - p1)
         denominator = v1.Dot(v1)
 
