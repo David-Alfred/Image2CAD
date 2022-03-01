@@ -34,7 +34,7 @@ class DimensionalLinesFeature():
              arrowPts.append(pt)
         uniqueLines = LineSegmentsFeature.SegmentCreator(extractedLinesP)
         segLines = LineSegmentsFeature.SeggeratedCreator(uniqueLines)
-        LineSegmentsFeature.cornerOnSegLine(arrowPts, segLines)
+        LineSegmentsFeature.cornerOnSegLine(arrowPts, segLines) # arrow centers as corners of dimension lines
         detectedLineSegments = LineSegmentsFeature.DetectDimensionalLineSegments(segLines, ArrowHeadsList)
         DimensionalLineImage = LineSegmentsFeature.PlotLine(detectedLineSegments)
         LineSegmentsFeature.DisplayOutputs()
