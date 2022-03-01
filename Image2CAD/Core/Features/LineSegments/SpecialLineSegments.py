@@ -68,6 +68,9 @@ class SpecialLineSegments:
        self.SetEnds()
 
     def SetEnds(self):
+       """
+       reset end points of lines with "corners" and end points of line segments
+       """
        points = []
        numCorners = len(self._cornerPoints)
        if numCorners >= 1:
