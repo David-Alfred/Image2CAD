@@ -306,7 +306,7 @@ class SpecialLineSegments:
        numCorners = len(self._cornerPoints)
        ExtractedDimensionalLine = []
      
-       if numCorners == 1:
+       if numCorners == 1: # dimension line with one arrow head 
               c1 = self._cornerPoints[0]
               c2 = self._line.startPoint
               c3 = self._line.endPoint
@@ -330,7 +330,7 @@ class SpecialLineSegments:
                                 DL.ExtractDimensionalLine(DL, Dimensional_AH, Dimensional_LS)
                                 ExtractedDimensionalLine.append(DL)
         
-       else:
+       else: # dimension line with two arrow heads
              for i in range(0, numCorners-1):
                     Dimensional_LS = []
                     Dimensional_AH = []
