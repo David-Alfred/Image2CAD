@@ -200,7 +200,15 @@ class SpecialLineSegments:
 
     @staticmethod
     def PixelScanner(p1, p2, img):
-        
+        """
+        build a pixel array
+        param:
+            p1, p2: two end points of a line segment
+            img: the original image
+
+        return:
+            an array, the first and the second row indicate coordinates on the image, the third row is the pixel value
+        """
         height = img.shape[0]
         width = img.shape[1]
         p1x = p1.x
