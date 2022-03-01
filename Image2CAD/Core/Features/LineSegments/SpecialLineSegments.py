@@ -51,6 +51,7 @@ class SpecialLineSegments:
        self._lineSegments = projLineSegments
 
     def SortCorners(self):
+       # sort "corners" according their position on the line
        sortedCornersDict = {}
        corners = self._cornerPoints
        for cp in corners:
