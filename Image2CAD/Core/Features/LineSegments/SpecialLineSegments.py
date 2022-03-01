@@ -120,13 +120,16 @@ class SpecialLineSegments:
 
     @staticmethod
     def SeggregatePoints(linesegments, line):
+        """
+        get farthest two end points of line segments
+        """
         points = []
         for ls in linesegments:
             sPt = ls.startPoint
             ePt = ls.endPoint
             points.append(sPt)
             points.append(ePt)
-        sortedSegPoints = SpecialLineSegments.sortPoints(points, line)
+        sortedSegPoints = SpecialLineSegments.sortPoints(points, line) # sort end points of line segments
         p1 = sortedSegPoints[0]
         p2 = sortedSegPoints[(len(sortedSegPoints) - 1)]
         return p1, p2
