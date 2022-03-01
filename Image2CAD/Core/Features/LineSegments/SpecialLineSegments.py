@@ -31,6 +31,7 @@ class SpecialLineSegments:
         return "".join(["SpecialLineSegments[ (Line = ", str(self._line), "),(LineSegments = ", str(self._lineSegments), "),(CornerPoints = ", str(self._cornerPoints), ")]"])
 
     def ProjectCorners(self):
+       # project "corners" to line
        corners = self._cornerPoints
        projCorners = []
        for cp in corners:
