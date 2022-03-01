@@ -84,6 +84,9 @@ class ImgTransform():
 
     @staticmethod
     def ImgAspectResize(img,h,w):
+        """
+        resize an image into another image with height h and width w
+        """
         if h == None:
             r = w / img.shape[1]
             dim = (w, int(img.shape[0] * r))
