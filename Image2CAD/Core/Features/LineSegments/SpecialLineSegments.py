@@ -157,6 +157,14 @@ class SpecialLineSegments:
 
     @staticmethod
     def GetUParam(c1, sl):
+       """
+       get the position of "corners" on the line segment
+       param:
+           c1: corner
+           sl: the line segment packaged as a "special line segment"
+       return:
+           U: the position of the corner on the line segment
+       """
        line = sl._line                                                    
        startpt = line.startPoint
        endpt = line.endPoint
