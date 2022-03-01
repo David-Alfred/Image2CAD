@@ -41,6 +41,13 @@ class LineSegmentsFeature():
 
     @staticmethod
     def GetUniqueLines(lineSegments):
+       """
+       Get lines which do not "overlap"
+       param:
+           lineSegments: detected lines segment packaged as "Line2"
+       return:
+           lines: a dictionary, the keys are the unique lines and the values are lines coincide with the lines in keys
+       """
        lines = {}
        for i in range(1, len(lineSegments)):
          ls = lineSegments[i]
